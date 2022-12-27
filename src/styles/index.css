@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply scroll-smooth font-poppins;
+  }
+
+  input,
+  button {
+    @apply outline-none;
+  }
+}
+
+@layer components {
+  .shadow-space-cadet {
+    box-shadow: 0px 10px 50px 0px rgba(9, 72, 179, 0.51);
+    -webkit-box-shadow: 0px 10px 50px 0px rgba(9, 72, 179, 0.51);
+    -moz-box-shadow: 0px 10px 50px 0px rgba(9, 72, 179, 0.51);
+  }
+}
+
+@layer utilities {
+  .max-w-8xl {
+    @apply max-w-[88rem];
+  }
+}
