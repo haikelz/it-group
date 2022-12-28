@@ -27,3 +27,5 @@ export const ButtonWithArrow = memo(
     );
   }
 );
+
+ButtonWithArrow.displayName = "ButtonWithArrow";

@@ -19,25 +19,25 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
       "@/components/*": [
-        "src/components/*"
+        "components/*"
       ],
       "@/hooks/*": [
-        "src/hooks/*"
+        "hooks/*"
       ],
       "@/helpers/*": [
-        "src/helpers/*"
+        "helpers/*"
       ],
       "@/styles": [
-        "src/styles"
+        "styles"
       ],
       "@/utils/*": [
-        "src/utils/*"
+        "utils/*"
       ],
       "@/types": [
-        "src/types"
+        "types"
       ]
     }
   },

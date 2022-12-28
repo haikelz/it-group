@@ -1,7 +1,7 @@
-import { statisticsList } from "@/utils/data";
 import { Heading } from "@/components/ui/typography/Heading";
-import Layout from "./Layout";
 import { Paragraph } from "@/components/ui/typography/Paragraph";
+import { statisticsList } from "@/utils/data";
+import Layout from "./Layout";
 
 const Statistics = () => {
   return (

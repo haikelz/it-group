@@ -1,6 +1,6 @@
+import { ButtonWithArrow } from "@/components/ui/ButtonWithArrow";
 import { Heading } from "@/components/ui/typography/Heading";
 import { Paragraph } from "@/components/ui/typography/Paragraph";
-import { ButtonWithArrow } from "@/components/ui/ButtonWithArrow";
 import Layout from "./Layout";
 
 const Banner = () => {

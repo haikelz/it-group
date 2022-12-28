@@ -3,14 +3,14 @@ import { lazy, memo } from "react";
 
 const LazyLoadImage = lazy(() => import("../LazyLoadImage"));
 
-type CardArticlesProps = {
+type CardArticleProps = {
   date: string;
   thumbnail: string;
   title: string;
   preview: string;
 };
 
-export const CardArticles = memo(({ date, thumbnail, title, preview }: CardArticlesProps) => {
+export const CardArticle = memo(({ date, thumbnail, title, preview }: CardArticleProps) => {
   return (
     <div className="shadow-space-cadet cursor-pointer overflow-hidden rounded-xl transition-all ease-in-out hover:scale-105">
       <LazyLoadImage className="w-full" src={thumbnail} alt={title} />
@@ -23,3 +23,5 @@ export const CardArticles = memo(({ date, thumbnail, title, preview }: CardArtic
     </div>
   );
 });
+
+CardArticle.displayName = "CardArticle";

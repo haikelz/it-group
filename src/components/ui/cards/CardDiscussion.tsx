@@ -30,3 +30,5 @@ export const CardDiscussion = memo(({ id, title, description }: CardDiscussionPr
     </div>
   );
 });
+
+CardDiscussion.displayName = "CardDiscussion";

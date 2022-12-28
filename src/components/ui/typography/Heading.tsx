@@ -31,3 +31,5 @@ export const Heading = memo(({ children, as, className }: HeadingProps) => {
       return null;
   }
 });
+
+Heading.displayName = "Heading";

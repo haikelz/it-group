@@ -9,3 +9,5 @@ type ParagraphProps = ChildrenProps & {
 export const Paragraph = memo(({ className, children }: ParagraphProps) => {
   return <p className={clsx("leading-normal tracking-normal", className)}>{children}</p>;
 });
+
+Paragraph.displayName = "Paragraph";

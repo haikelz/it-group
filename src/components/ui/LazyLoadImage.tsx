@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { SyntheticEvent, memo } from "react";
 
 type LazyLoadImageProps = {
   className?: string;
@@ -13,10 +13,14 @@ const LazyLoadImage = memo(({ className, src, alt, ...props }: LazyLoadImageProp
       src={src}
       alt={alt}
       loading="lazy"
-      onError={(event: any) => (event.target.src = "/images/sakura.jpg")}
+      onError={(event: SyntheticEvent<HTMLImageElement, Event>) =>
+        (event.currentTarget.src = "/images/sakura.jpg")
+      }
       {...props}
     />
   );
 });
+
+LazyLoadImage.displayName = "LazyLoadImage";
 
 export default LazyLoadImage;

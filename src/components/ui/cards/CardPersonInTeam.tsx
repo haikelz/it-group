@@ -44,3 +44,5 @@ export const CardPersonInTeam = memo(({ image, job, name, desc }: CardPersonInTe
     </div>
   );
 });
+
+CardPersonInTeam.displayName = "CardPersonInTeam";
