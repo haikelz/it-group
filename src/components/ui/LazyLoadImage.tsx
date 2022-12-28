@@ -1,12 +1,12 @@
 import { memo } from "react";
 
 type LazyLoadImageProps = {
-  className: string;
+  className?: string;
   src: string;
   alt: string;
 };
 
-const LazyLoadImage = memo(({ className, src, alt }: LazyLoadImageProps) => {
+const LazyLoadImage = memo(({ className, src, alt, ...props }: LazyLoadImageProps) => {
   return (
     <img
       className={className}
@@ -14,6 +14,7 @@ const LazyLoadImage = memo(({ className, src, alt }: LazyLoadImageProps) => {
       alt={alt}
       loading="lazy"
       onError={(event: any) => (event.target.src = "/images/sakura.jpg")}
+      {...props}
     />
   );
 });

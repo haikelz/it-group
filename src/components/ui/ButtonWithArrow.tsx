@@ -5,7 +5,7 @@ import { WhiteArrowRight } from "./svg/WhiteArrowRight";
 import { Paragraph } from "./typography/Paragraph";
 
 type ButtonProps = {
-  className: string;
+  className?: string;
   desc: string;
   isWhiteArrowRight?: boolean;
   isDarkArrowRight?: boolean;

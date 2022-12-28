@@ -3,13 +3,9 @@ import clsx from "clsx";
 import { memo } from "react";
 
 type ParagraphProps = ChildrenProps & {
-  className: string;
+  className?: string;
 };
 
-export const Paragraph = memo(({ className, children, ...props }: ParagraphProps) => {
-  return (
-    <p {...props} className={clsx("leading-normal tracking-normal", className)}>
-      {children}
-    </p>
-  );
+export const Paragraph = memo(({ className, children }: ParagraphProps) => {
+  return <p className={clsx("leading-normal tracking-normal", className)}>{children}</p>;
 });

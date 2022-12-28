@@ -1,6 +1,3 @@
-export const loremIpsum =
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere libero, dolor odio elit libero sed lorem arcu hendrerit.";
-
 export const discussionsList = [
   {
     id: "01",
@@ -67,21 +64,21 @@ export const personsInTeamList = [
     image: "/images/person-in-team.png",
     job: "Front End Web Developer",
     name: "Syaid Alafarishi",
-    desc: loremIpsum,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere libero, dolor odio elit libero sed lorem arcu hendrerit.",
   },
   {
     id: 2,
     image: "/images/person-in-team.png",
     job: "UI Designer & Sysadmin",
     name: "Kang Vian",
-    desc: loremIpsum,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere libero, dolor odio elit libero sed lorem arcu hendrerit.",
   },
   {
     id: 3,
     image: "/images/person-in-team.png",
     job: "Backend Web Developer",
     name: "Sulaiman",
-    desc: loremIpsum,
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere libero, dolor odio elit libero sed lorem arcu hendrerit.",
   },
 ];
 
@@ -127,12 +124,5 @@ export const reviewsList = [
     job: "Devops Engineer",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Augue eget quis pellentesque habitant. Eget fames gravida quam at in tincidunt ante phasellus pulvinar.",
     select: ["Andri Firmansyah", "John Doe", "Budi"],
-  },
-];
-
-export const navbarList = [
-  {
-    id: 1,
-    name: "",
   },
 ];

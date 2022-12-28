@@ -2,7 +2,7 @@ import { CardDiscussion } from "@/components/ui/cards/CardDiscussion";
 import { Heading } from "@/components/ui/typography/Heading";
 import { Paragraph } from "@/components/ui/typography/Paragraph";
 import { discussionsList } from "@/utils/data";
-import { ButtonWithArrow } from "../ui/ButtonWithArrow";
+import { ButtonWithArrow } from "@/components/ui/ButtonWithArrow";
 import Layout from "./Layout";
 
 const Discussions = () => {
@@ -25,12 +25,12 @@ const Discussions = () => {
         Kami belajar dan membahas banyak materi serta projek
       </Paragraph>
       <div className="mt-14 grid grid-cols-1 grid-rows-3 gap-8 md:grid-cols-2 md:gap-10">
-        {discussionsList.map((discus) => (
+        {discussionsList.map((discuss) => (
           <CardDiscussion
-            id={discus.id}
-            title={discus.title}
-            description={discus.description}
-            key={discus.id}
+            id={discuss.id}
+            title={discuss.title}
+            description={discuss.description}
+            key={discuss.id}
           />
         ))}
       </div>
