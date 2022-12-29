@@ -13,7 +13,7 @@ type CardPersonInTeamProps = {
   desc: string;
 };
 
-export const CardPersonInTeam = memo(({ image, job, name, desc }: CardPersonInTeamProps) => {
+const CardPersonInTeam = ({ image, job, name, desc }: CardPersonInTeamProps) => {
   return (
     <div
       className={clsx(
@@ -43,6 +43,6 @@ export const CardPersonInTeam = memo(({ image, job, name, desc }: CardPersonInTe
       </div>
     </div>
   );
-});
+};
 
-CardPersonInTeam.displayName = "CardPersonInTeam";
+export default memo(CardPersonInTeam);

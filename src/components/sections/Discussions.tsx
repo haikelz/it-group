@@ -1,5 +1,5 @@
 import { ButtonWithArrow } from "@/components/ui/ButtonWithArrow";
-import { CardDiscussion } from "@/components/ui/cards/CardDiscussion";
+import CardDiscussion from "@/components/ui/cards/CardDiscussion";
 import { Heading } from "@/components/ui/typography/Heading";
 import { Paragraph } from "@/components/ui/typography/Paragraph";
 import { discussionsList } from "@/utils/data";
@@ -7,7 +7,7 @@ import Layout from "./Layout";
 
 const Discussions = () => {
   return (
-    <Layout>
+    <Layout bgColor="white">
       <div
         id="discussions"
         className="flex w-full flex-col justify-between md:flex-row md:items-center"

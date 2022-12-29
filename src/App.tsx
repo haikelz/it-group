@@ -9,16 +9,18 @@ import Team from "@/components/sections/Team";
 
 const App = () => {
   return (
-    <main>
+    <div className="bg-cadet">
       <Navbar />
-      <Banner />
-      <Discussions />
-      <Team />
-      <Statistics />
-      <Reviews />
-      <Articles />
+      <main>
+        <Banner />
+        <Discussions />
+        <Team />
+        <Statistics />
+        <Reviews />
+        <Articles />
+      </main>
       <Footer />
-    </main>
+    </div>
   );
 };
 

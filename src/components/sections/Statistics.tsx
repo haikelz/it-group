@@ -5,7 +5,7 @@ import Layout from "./Layout";
 
 const Statistics = () => {
   return (
-    <Layout className="">
+    <Layout bgColor="white">
       <div id="statistics" className="flex w-full flex-col items-center justify-between">
         <div className="text-center">
           <Paragraph className="text-lg font-medium text-brown">JADI BAGIAN DARI KAMI</Paragraph>

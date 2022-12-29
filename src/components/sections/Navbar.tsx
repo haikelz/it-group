@@ -2,22 +2,14 @@ import { Bar } from "@/components/ui/svg/Bar";
 import { X } from "@/components/ui/svg/X";
 import { Heading } from "@/components/ui/typography/Heading";
 import { Paragraph } from "@/components/ui/typography/Paragraph";
-import { useScroll } from "@/hooks/useScroll";
-import clsx from "clsx";
 import { useState } from "react";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
-  const scroll: number = useScroll();
 
   return (
     <>
-      <nav
-        className={clsx(
-          "sticky top-0 z-10 flex w-full max-w-full items-center justify-center p-4 backdrop-blur-md md:fixed",
-          scroll >= 80 ? "bg-cadet/80" : "bg-cadet"
-        )}
-      >
+      <nav className="sticky top-0 z-10 flex w-full max-w-full items-center justify-center bg-cadet/80 p-4 backdrop-blur-md md:fixed">
         <div className="max-w-8xl flex w-full items-center justify-between">
           <Heading as="h2" className="font-bold text-white">
             ITGroup
@@ -50,12 +42,7 @@ const Navbar = () => {
         </div>
       </nav>
       {isActive ? (
-        <nav
-          className={clsx(
-            "fixed z-10 flex w-full max-w-full items-center justify-center p-4 backdrop-blur-md md:hidden",
-            scroll >= 80 ? "bg-cadet/80" : "bg-cadet"
-          )}
-        >
+        <nav className="fixed z-10 flex w-full max-w-full items-center justify-center bg-cadet/80 p-4 backdrop-blur-md md:hidden">
           <ul className="flex flex-col items-center justify-center space-y-4">
             <li>
               <Paragraph className="text-lg font-semibold text-white">Layanan</Paragraph>

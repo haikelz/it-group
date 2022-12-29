@@ -1,13 +1,12 @@
 import { ChildrenProps } from "@/types";
 import clsx from "clsx";
-import { memo } from "react";
 
 type HeadingProps = ChildrenProps & {
   as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   className?: string;
 };
 
-export const Heading = memo(({ children, as, className }: HeadingProps) => {
+export const Heading = ({ children, as, className }: HeadingProps) => {
   switch (as) {
     case "h1":
       return <h1 className={clsx("text-4xl leading-snug", className)}>{children}</h1>;
@@ -30,6 +29,4 @@ export const Heading = memo(({ children, as, className }: HeadingProps) => {
     default:
       return null;
   }
-});
-
-Heading.displayName = "Heading";
+};

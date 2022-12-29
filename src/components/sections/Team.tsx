@@ -1,4 +1,4 @@
-import { CardPersonInTeam } from "@/components/ui/cards/CardPersonInTeam";
+import CardPersonInTeam from "@/components/ui/cards/CardPersonInTeam";
 import { Heading } from "@/components/ui/typography/Heading";
 import { Paragraph } from "@/components/ui/typography/Paragraph";
 import { personsInTeamList } from "@/utils/data";

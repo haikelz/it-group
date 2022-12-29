@@ -8,7 +8,7 @@ type CardDiscussionProps = {
   description: string;
 };
 
-export const CardDiscussion = memo(({ id, title, description }: CardDiscussionProps) => {
+const CardDiscussion = ({ id, title, description }: CardDiscussionProps) => {
   return (
     <div className="shadow-space-cadet flex cursor-pointer items-center justify-start rounded-3xl p-8 transition-all ease-in-out hover:scale-105">
       <div className="flex flex-col justify-center md:flex-row md:items-center">
@@ -29,6 +29,6 @@ export const CardDiscussion = memo(({ id, title, description }: CardDiscussionPr
       </div>
     </div>
   );
-});
+};
 
-CardDiscussion.displayName = "CardDiscussion";
+export default memo(CardDiscussion);

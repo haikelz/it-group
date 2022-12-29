@@ -10,7 +10,7 @@ type CardArticleProps = {
   preview: string;
 };
 
-export const CardArticle = memo(({ date, thumbnail, title, preview }: CardArticleProps) => {
+const CardArticle = ({ date, thumbnail, title, preview }: CardArticleProps) => {
   return (
     <div className="shadow-space-cadet cursor-pointer overflow-hidden rounded-xl transition-all ease-in-out hover:scale-105">
       <LazyLoadImage className="w-full" src={thumbnail} alt={title} />
@@ -22,6 +22,6 @@ export const CardArticle = memo(({ date, thumbnail, title, preview }: CardArticl
       </div>
     </div>
   );
-});
+};
 
-CardArticle.displayName = "CardArticle";
+export default memo(CardArticle);

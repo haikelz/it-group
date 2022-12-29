@@ -1,11 +1,11 @@
-import { CardArticle } from "@/components/ui/cards/CardArticle";
+import CardArticle from "@/components/ui/cards/CardArticle";
 import { Heading } from "@/components/ui/typography/Heading";
 import { articlesList } from "@/utils/data";
 import Layout from "./Layout";
 
 const Articles = () => {
   return (
-    <Layout>
+    <Layout bgColor="white">
       <div id="articles">
         <Heading as="h2" className="text-center font-semibold">
           Artikel & Journal

@@ -1,4 +1,3 @@
-import { memo } from "react";
 import { DarkArrowRight } from "./svg/DarkArrowRight";
 import { FulvousArrowRight } from "./svg/FulvousArrowRight";
 import { WhiteArrowRight } from "./svg/WhiteArrowRight";
@@ -11,21 +10,22 @@ type ButtonProps = {
   isDarkArrowRight?: boolean;
 };
 
-export const ButtonWithArrow = memo(
-  ({ className, desc, isWhiteArrowRight, isDarkArrowRight }: ButtonProps) => {
-    return (
-      <button type="button" className={className}>
-        <Paragraph className="text-lg font-semibold text-white">{desc}</Paragraph>
-        {isWhiteArrowRight ? (
-          <WhiteArrowRight />
-        ) : isDarkArrowRight ? (
-          <DarkArrowRight />
-        ) : (
-          <FulvousArrowRight />
-        )}
-      </button>
-    );
-  }
-);
-
-ButtonWithArrow.displayName = "ButtonWithArrow";
+export const ButtonWithArrow = ({
+  className,
+  desc,
+  isWhiteArrowRight,
+  isDarkArrowRight,
+}: ButtonProps) => {
+  return (
+    <button type="button" className={className}>
+      <Paragraph className="text-lg font-semibold text-white">{desc}</Paragraph>
+      {isWhiteArrowRight ? (
+        <WhiteArrowRight />
+      ) : isDarkArrowRight ? (
+        <DarkArrowRight />
+      ) : (
+        <FulvousArrowRight />
+      )}
+    </button>
+  );
+};

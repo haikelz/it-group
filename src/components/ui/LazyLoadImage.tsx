@@ -1,4 +1,4 @@
-import { SyntheticEvent, memo } from "react";
+import { SyntheticEvent } from "react";
 
 type LazyLoadImageProps = {
   className?: string;
@@ -6,7 +6,7 @@ type LazyLoadImageProps = {
   alt: string;
 };
 
-const LazyLoadImage = memo(({ className, src, alt, ...props }: LazyLoadImageProps) => {
+const LazyLoadImage = ({ className, src, alt, ...props }: LazyLoadImageProps) => {
   return (
     <img
       className={className}
@@ -19,8 +19,6 @@ const LazyLoadImage = memo(({ className, src, alt, ...props }: LazyLoadImageProp
       {...props}
     />
   );
-});
-
-LazyLoadImage.displayName = "LazyLoadImage";
+};
 
 export default LazyLoadImage;
