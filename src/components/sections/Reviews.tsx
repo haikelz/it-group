@@ -21,7 +21,7 @@ const Reviews = () => {
               <div className="flex w-full flex-col items-center justify-center md:flex-row">
                 <div className="flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md md:mr-10">
                   <LazyLoadImage
-                    className="w-full cursor-pointer transition-all ease-in-out hover:scale-110"
+                    className="h-full w-full cursor-pointer transition-all ease-in-out hover:scale-110"
                     src={review.img}
                     alt={`${review.name}'s Picture`}
                   />
@@ -45,6 +45,7 @@ const Reviews = () => {
                       "w-fit rounded-full p-2.5",
                       selected === selectedName ? "bg-fulvous" : "bg-[#422CC6]"
                     )}
+                    aria-label="select review button"
                   ></button>
                 ))}
               </div>

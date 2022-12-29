@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <Layout bgColor="cadet" className="text-white">
       <div className="mb-6 flex flex-col justify-between md:flex-row">
-        <div className="">
+        <div>
           <div>
             <Heading as="h2" className="font-bold">
               ITGroup
@@ -22,9 +22,9 @@ const Footer = () => {
             </Paragraph>
           </div>
           <div className="my-10">
-            <Heading as="h5" className="mb-2 text-[20px] font-semibold">
+            <Paragraph className="mb-2 text-[20px] font-semibold leading-snug">
               Our Social Media
-            </Heading>
+            </Paragraph>
             <ul className="flex space-x-6">
               <li>
                 <Instagram />
@@ -42,28 +42,24 @@ const Footer = () => {
           </div>
         </div>
         <div className="">
-          <Heading as="h5" className="text-[22px] font-semibold">
-            Explore
-          </Heading>
+          <Paragraph className="text-[22px] font-semibold leading-snug">Explore</Paragraph>
           <ul className="mt-2 space-y-3 text-[18px] font-medium">
             <li>
-              <Paragraph className="">Layanan</Paragraph>
+              <Paragraph>Layanan</Paragraph>
             </li>
             <li>
-              <Paragraph className="">Blog</Paragraph>
+              <Paragraph>Blog</Paragraph>
             </li>
             <li>
-              <Paragraph className="">Portfolio</Paragraph>
+              <Paragraph>Portfolio</Paragraph>
             </li>
             <li>
-              <Paragraph className="">Contact</Paragraph>
+              <Paragraph>Contact</Paragraph>
             </li>
           </ul>
         </div>
         <div className="my-10 md:mt-0">
-          <Heading as="h5" className="text-[22px] font-semibold">
-            Contact Us
-          </Heading>
+          <Paragraph className="text-[22px] font-semibold leading-snug">Contact Us</Paragraph>
           <Paragraph className="mt-2 text-[18px] font-medium">0823-3162-3374</Paragraph>
         </div>
       </div>

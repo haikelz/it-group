@@ -1,5 +1,4 @@
 import { ButtonWithArrow } from "@/components/ui/ButtonWithArrow";
-import { Heading } from "@/components/ui/typography/Heading";
 import { Paragraph } from "@/components/ui/typography/Paragraph";
 import clsx from "clsx";
 import { lazy, memo } from "react";
@@ -22,13 +21,11 @@ const CardPersonInTeam = ({ image, job, name, desc }: CardPersonInTeamProps) => 
       )}
     >
       <div className="flex flex-col items-center justify-center p-6">
-        <LazyLoadImage className="w-[400px]" src={image} alt={name} />
+        <LazyLoadImage className="h-full w-[400px]" src={image} alt={name} />
       </div>
       <div className="w-full">
         <div className="w-fit rounded-r-full bg-gradient-to-br from-[#8A79F1] via-[#6851F6] to-cadet py-4 pr-14 pl-4 text-left text-white">
-          <Heading className="font-bold" as="h4">
-            {job}
-          </Heading>
+          <Paragraph className="text-xl font-bold leading-snug">{job}</Paragraph>
         </div>
       </div>
       <div className="mb-7 p-5 text-center">

@@ -12,9 +12,11 @@ const Discussions = () => {
         id="discussions"
         className="flex w-full flex-col justify-between md:flex-row md:items-center"
       >
-        <Heading as="h2" className="font-semibold md:w-[622px]">
-          Mulai skill kamu dengan bergabung disini
-        </Heading>
+        <div className="md:w-[622px]">
+          <Heading as="h2" className="font-semibold">
+            Mulai skill kamu dengan bergabung disini
+          </Heading>
+        </div>
         <ButtonWithArrow
           className="my-4 flex w-fit items-center justify-center space-x-4 rounded-full bg-gradient-to-br from-violets via-verylightblue to-cadet py-3 pl-7 pr-3 md:my-0"
           desc="Join Group"

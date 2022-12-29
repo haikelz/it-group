@@ -17,7 +17,7 @@ export const ButtonWithArrow = ({
   isDarkArrowRight,
 }: ButtonProps) => {
   return (
-    <button type="button" className={className}>
+    <button type="button" className={className} aria-label="button with arrow">
       <Paragraph className="text-lg font-semibold text-white">{desc}</Paragraph>
       {isWhiteArrowRight ? (
         <WhiteArrowRight />

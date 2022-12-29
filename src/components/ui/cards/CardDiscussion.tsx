@@ -21,9 +21,7 @@ const CardDiscussion = ({ id, title, description }: CardDiscussionProps) => {
           </Heading>
         </div>
         <div className="">
-          <Heading as="h4" className="my-2 font-semibold">
-            {title}
-          </Heading>
+          <Paragraph className="my-2 text-xl font-semibold leading-snug">{title}</Paragraph>
           <Paragraph className="text-base text-[#795757]">{description}</Paragraph>
         </div>
       </div>

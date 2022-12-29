@@ -13,7 +13,7 @@ type CardArticleProps = {
 const CardArticle = ({ date, thumbnail, title, preview }: CardArticleProps) => {
   return (
     <div className="shadow-space-cadet cursor-pointer overflow-hidden rounded-xl transition-all ease-in-out hover:scale-105">
-      <LazyLoadImage className="w-full" src={thumbnail} alt={title} />
+      <LazyLoadImage className="h-fit w-full" src={thumbnail} alt={title} />
       <div className="w-fit p-7">
         <span className="font-semibold">{date}</span>
         <Paragraph className="my-4 text-lg font-semibold">{title}</Paragraph>

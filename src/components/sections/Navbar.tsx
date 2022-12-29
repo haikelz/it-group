@@ -31,12 +31,18 @@ const Navbar = () => {
               <button
                 type="submit"
                 className="rounded-full bg-fulvous px-10 py-3.5 font-medium text-white"
+                aria-label="submit button"
               >
                 Join Now
               </button>
             </li>
           </ul>
-          <button className="md:hidden" onClick={() => setIsActive(!isActive)}>
+          <button
+            type="button"
+            className="md:hidden"
+            onClick={() => setIsActive(!isActive)}
+            aria-label="open close navbar"
+          >
             {isActive ? <X /> : <Bar />}
           </button>
         </div>
@@ -59,7 +65,8 @@ const Navbar = () => {
             <li>
               <button
                 type="submit"
-                className="rounded-full bg-fulvous px-10 py-3.5 font-medium text-white"
+                className="rounded-full bg-fulvous px-10 py-3.5 font-semibold text-white"
+                aria-label="join button"
               >
                 Join Now
               </button>

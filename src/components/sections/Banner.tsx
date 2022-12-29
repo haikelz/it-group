@@ -2,6 +2,7 @@ import { ButtonWithArrow } from "@/components/ui/ButtonWithArrow";
 import { Heading } from "@/components/ui/typography/Heading";
 import { Paragraph } from "@/components/ui/typography/Paragraph";
 import Layout from "./Layout";
+import LazyLoadImage from "../ui/LazyLoadImage";
 
 const Banner = () => {
   return (
@@ -21,8 +22,8 @@ const Banner = () => {
             isWhiteArrowRight
           />
         </div>
-        <div className="">
-          <img className="w-[70rem]" src="/images/hero.png" alt="" />
+        <div>
+          <LazyLoadImage className="h-fit w-[70rem]" src="/images/hero.png" alt="hero" />
         </div>
       </div>
     </Layout>

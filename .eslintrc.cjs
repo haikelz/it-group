@@ -11,6 +11,7 @@ module.exports = {
       version: "detect",
     },
   },
+  plugins: ["jsx-a11y"],
   rules: {
     "react/react-in-jsx-scope": 0,
   },
