@@ -3,6 +3,7 @@ import { Heading } from "@/components/ui/typography/Heading";
 import { Paragraph } from "@/components/ui/typography/Paragraph";
 import Layout from "./Layout";
 import LazyLoadImage from "../ui/LazyLoadImage";
+import clsx from "clsx";
 
 const Banner = () => {
   return (
@@ -17,7 +18,10 @@ const Banner = () => {
             passionnya
           </Paragraph>
           <ButtonWithArrow
-            className="flex w-fit items-center justify-center space-x-4 rounded-full bg-fulvous px-4 py-2 font-semibold text-white"
+            className={clsx(
+              "flex w-fit items-center justify-center space-x-4 rounded-full",
+              "bg-fulvous px-4 py-2 font-semibold text-white transition-all ease-out hover:bg-orange-500"
+            )}
             desc="Get Started"
             isWhiteArrowRight
           />

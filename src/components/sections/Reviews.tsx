@@ -19,7 +19,12 @@ const Reviews = () => {
           .map((review) => (
             <div key={review.id} className="flex flex-col items-center justify-center">
               <div className="flex w-full flex-col items-center justify-center md:flex-row">
-                <div className="flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md md:mr-10">
+                <div
+                  className={clsx(
+                    "flex h-full w-full flex-col items-center justify-center",
+                    "overflow-hidden rounded-md md:mr-10"
+                  )}
+                >
                   <LazyLoadImage
                     className="h-full w-full cursor-pointer transition-all ease-in-out hover:scale-110"
                     src={review.img}
@@ -31,7 +36,7 @@ const Reviews = () => {
                     {review.name}
                   </Heading>
                   <Paragraph className="text-xl font-semibold">{review.job}</Paragraph>
-                  <div className="mt-4 md:w-[604px]">
+                  <div className="mt-4 lg:w-[604px]">
                     <Paragraph className="text-lg font-normal text-indigo">{review.desc}</Paragraph>
                   </div>
                 </div>

@@ -2,6 +2,7 @@ import { Bar } from "@/components/ui/svg/Bar";
 import { X } from "@/components/ui/svg/X";
 import { Heading } from "@/components/ui/typography/Heading";
 import { Paragraph } from "@/components/ui/typography/Paragraph";
+import clsx from "clsx";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -9,12 +10,22 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-10 flex w-full max-w-full items-center justify-center bg-cadet/80 p-4 backdrop-blur-md md:fixed">
+      <nav
+        className={clsx(
+          "sticky top-0 z-10 flex w-full max-w-full items-center justify-center",
+          "bg-cadet/80 p-4 backdrop-blur-md md:fixed"
+        )}
+      >
         <div className="max-w-8xl flex w-full items-center justify-between">
           <Heading as="h2" className="font-bold text-white">
             ITGroup
           </Heading>
-          <ul className="hidden items-center justify-center text-[20px] font-medium text-white md:flex md:space-x-6 lg:space-x-10">
+          <ul
+            className={clsx(
+              "hidden items-center justify-center text-[20px] font-medium text-white",
+              "md:flex md:space-x-6 lg:space-x-10"
+            )}
+          >
             <li>
               <Paragraph className="">Layanan</Paragraph>
             </li>
@@ -30,7 +41,10 @@ const Navbar = () => {
             <li>
               <button
                 type="submit"
-                className="rounded-full bg-fulvous px-10 py-3.5 font-medium text-white"
+                className={clsx(
+                  "rounded-full bg-fulvous px-10 py-3.5 font-medium text-white",
+                  "transition-all ease-in-out hover:bg-orange-500"
+                )}
                 aria-label="submit button"
               >
                 Join Now
@@ -48,7 +62,12 @@ const Navbar = () => {
         </div>
       </nav>
       {isActive ? (
-        <nav className="fixed z-10 flex w-full max-w-full items-center justify-center bg-cadet/80 p-4 backdrop-blur-md md:hidden">
+        <nav
+          className={clsx(
+            "fixed z-10 flex w-full max-w-full items-center justify-center bg-cadet/80 p-4",
+            "backdrop-blur-md md:hidden"
+          )}
+        >
           <ul className="flex flex-col items-center justify-center space-y-4">
             <li>
               <Paragraph className="text-lg font-semibold text-white">Layanan</Paragraph>

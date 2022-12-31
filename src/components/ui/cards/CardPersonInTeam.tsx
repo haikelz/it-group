@@ -24,7 +24,12 @@ const CardPersonInTeam = ({ image, job, name, desc }: CardPersonInTeamProps) => 
         <LazyLoadImage className="h-full w-[400px]" src={image} alt={name} />
       </div>
       <div className="w-full">
-        <div className="w-fit rounded-r-full bg-gradient-to-br from-[#8A79F1] via-[#6851F6] to-cadet py-4 pr-14 pl-4 text-left text-white">
+        <div
+          className={clsx(
+            "w-fit rounded-r-full bg-gradient-to-br from-[#8A79F1] via-[#6851F6] to-cadet",
+            "py-4 pr-14 pl-4 text-left text-white"
+          )}
+        >
           <Paragraph className="text-xl font-bold leading-snug">{job}</Paragraph>
         </div>
       </div>
@@ -34,7 +39,10 @@ const CardPersonInTeam = ({ image, job, name, desc }: CardPersonInTeamProps) => 
       </div>
       <div className="flex w-full items-center justify-center">
         <ButtonWithArrow
-          className="absolute flex items-center justify-between space-x-4 rounded-full bg-[#422CC6] py-2 pl-6 pr-2"
+          className={clsx(
+            "absolute flex items-center justify-between space-x-4",
+            "rounded-full bg-[#422CC6] py-2 pl-6 pr-2"
+          )}
           desc="Follow Now"
         />
       </div>

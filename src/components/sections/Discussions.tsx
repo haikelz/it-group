@@ -4,6 +4,7 @@ import { Heading } from "@/components/ui/typography/Heading";
 import { Paragraph } from "@/components/ui/typography/Paragraph";
 import { discussionsList } from "@/utils/data";
 import Layout from "./Layout";
+import clsx from "clsx";
 
 const Discussions = () => {
   return (
@@ -18,7 +19,11 @@ const Discussions = () => {
           </Heading>
         </div>
         <ButtonWithArrow
-          className="my-4 flex w-fit items-center justify-center space-x-4 rounded-full bg-gradient-to-br from-violets via-verylightblue to-cadet py-3 pl-7 pr-3 md:my-0"
+          className={clsx(
+            "my-4 flex w-fit items-center justify-center space-x-4 rounded-full",
+            "bg-gradient-to-br from-violets via-verylightblue to-cadet py-3 pl-7 pr-3 transition-all ease-in-out",
+            "hover:from-violet-600 hover:via-blue-700 hover:to-slate-900 md:my-0"
+          )}
           desc="Join Group"
           isDarkArrowRight
         />
